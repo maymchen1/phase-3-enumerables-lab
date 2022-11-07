@@ -21,7 +21,7 @@ end
 # where the heat level of the food is greater than 5
 def spiciest_foods(spicy_foods)
   spiciest_foods.select do |food|
-    food.[heat_level] > 5
+    food[:heat_level] > 5
   end 
 end
 
@@ -59,7 +59,6 @@ end
 def print_spiciest_foods(spicy_foods)
   spiciest = spiciest_foods(spicy_foods)
   print_spicy_foods(spiciest)
-  end 
 end
 
 # given an array of spicy foods, return an integer representing 
